@@ -48,17 +48,17 @@ MenuSystem.getInstance().addMenuEntry("Menu Entry Read", this, "testread", menu3
 #### define the corresponded public method in corresponded class 
 ```
 public void test2b () {
-		MenuSystem.getInstance().println("test2b");
-	}
+	MenuSystem.getInstance().println("test2b");
+}
 	
-	public void testread() {
-    // println method will print the message on the console
-		MenuSystem.getInstance().println("please input your name");
+public void testread() {
+	// println method will print the message on the console
+	MenuSystem.getInstance().println("please input your name");
     
-    // read method will read the input content from the console
-		String content = MenuSystem.getInstance().read();
-		MenuSystem.getInstance().println("hello, " + content);
-	}
+	// read method will read the input content from the console
+	String content = MenuSystem.getInstance().read();
+	MenuSystem.getInstance().println("hello, " + content);
+}
 ```
 
 #### connect to console through the telnet function
