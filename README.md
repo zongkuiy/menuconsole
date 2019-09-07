@@ -1,5 +1,7 @@
 # menuconsole
 
+Menuconsole provides the functionalities to using the telnet protocal to communicate with java applications during runtime.
+
 ### Usage
 
 #### configuration
