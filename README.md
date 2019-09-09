@@ -2,9 +2,17 @@
 
 Menuconsole provides the functionalities to using the telnet protocal to communicate with java applications during runtime.
 
-### Usage
+## Usage
 
-#### configuration
+### dependency
+```
+<dependency>
+  <groupId>cn.zongkuiy</groupId>
+  <artifactId>menuconsole</artifactId>
+  <version>0.0.1</version>
+</dependency>
+```
+### configuration
 
 Before calling the getInstance()(the working thread starts once the getInstance called), you can specify the console title and the listening IP/Port using following method:
 
@@ -17,7 +25,7 @@ MenuSystem.setListenPort(_listenPort);
 > the default title is "Debug Console"   
 > the default listening IP/Port is 127.0.0.1/7000   
 
-#### build the menu structure
+### build the menu structure
 >* addMenu create a node which has children   
 Parameters:   
     - title - the display name of menu   
@@ -45,7 +53,7 @@ MenuSystem.getInstance().addMenuEntry("Menu Entry 2B", this, "test2b", menu2);
 MenuSystem.getInstance().addMenuEntry("Menu Entry Read", this, "testread", menu3);
 ```
 
-#### define the corresponded public method in corresponded class 
+### define the corresponded public method in corresponded class 
 ```
 public void test2b () {
 	MenuSystem.getInstance().println("test2b");
@@ -61,7 +69,7 @@ public void testread() {
 }
 ```
 
-#### connect to console through the telnet function
+### connect to console through the telnet function
 ```
 root@yzk:~# telnet localhost 7000
 Trying 127.0.0.1...
